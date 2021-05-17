@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+  	<div class="main">
+  		<div class="banner">
+  			<div class="box">
+  				<h1 class="">To-do List</h1>
+  				<form>
+				  <input class="chalk" type="text" name="fname">
+				  <button id="enter" class="button">Add me</button>
+				</form>
+
+				<!-- <div class="container"> -->
+
+				<ul>
+				  <li class="bold"></li>
+				</ul>
+
+  				<!-- </div> -->
+  			
+  			</div>
+
+  		</div>
+  		
+  	</div>
+
+
+
+
+
+  	<script type="text/javascript">
+
+  		var input = document.querySelector("input");
+  		var button = document.querySelector(".button");
+  		var ul = document.querySelector("ul");
+  		var li = document.querySelector("li").classList;
+  		
+
+  		console.log(input);
+  		console.log(enter); 
+  		console.log(ul);
+  		console.log(li);
+
+
+
+  		// ul.addEventListener("click", function(){
+  		// 	console.log(input.value);
+
+  		// 		var li = document.createElement("li");
+  		// 	li.appendChild(document.createTextNode(input.value));
+  		// 	ul.appendChild(li);
+
+  		// })
+  		
+
+
+  		button.addEventListener("click", function(){
+  			console.log(input.value);
+  			if (input.value.length > 0) {
+
+  			var li = document.createElement("li");
+  			li.appendChild(document.createTextNode(input.value));
+  			ul.appendChild(li);
+  			input.value = "";
+  		}
+
+  		})
+
+
+
+
+
+  		// chalk.addEventListener("input", function(){
+  		// 	console.log(chalk.value);
+  		// })
+
+
+  // 		button.addEventListener("click", function() {
+  // 			var li = document.createElement("li");
+  // 			li.appendChild(document.TextNode("input.value"));
+  // 			container.appendChild(li);
+
+		// })
+
+  	</script>
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+  </body>
+</html>
